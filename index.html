@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,10 +13,8 @@
     </header>
     <main>
       <form id="dateForm">
-        <div>
-          <label for="dateInput">Choose a date:</label>
-          <input type="date" id="dateInput" required />
-        </div>
+        <label for="dateInput">Enter a date (DD-MM-YYYY):</label>
+        <input type="date" id="dateInput" required />
         <div class="buttons">
           <button type="submit">Search</button>
           <button type="button" class="favorites">
@@ -24,33 +22,9 @@
           </button>
         </div>
       </form>
-      <div id="apodContainer">
-        <div class="apodItem">
-          <div class="main-container">
-            <h2 class="title">Title Placeholder</h2>
-            <p class="date">Date Placeholder</p>
-            <img class="apodImg" src="placeholder.jpg" alt="Placeholder" />
-            <p class="explanation">Explanation Placeholder</p>
-            <button class="favBtn">Add to Favorites</button>
-          </div>
-        </div>
-      </div>
-      <div id="favoritesContainer">
-        <div class="favoriteItem">
-          <img
-            class="favoriteImg"
-            src="placeholder.jpg"
-            alt="Placeholder"
-            width="100px"
-            height="100px"
-          />
-          <div class="content">
-            <h3>Title Placeholder</h3>
-            <p>Date: Date Placeholder</p>
-            <button class="deleteBtn">Delete</button>
-          </div>
-        </div>
-      </div>
+      <div id="apodContainer"></div>
+      <div id="favoritesContainer"></div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
